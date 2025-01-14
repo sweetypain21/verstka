@@ -1,0 +1,181 @@
+/* Общий стиль для страницы */
+body {
+    font-family: 'Roboto', sans-serif; /* Современный шрифт */
+    margin: 20px;
+    background-color: #f3f4f6; /* Светло-серый фон страницы */
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background: white; /* Белый фон для таблицы */
+    border-radius: 12px; /* Округленные углы */
+    overflow: hidden; /* Убираем выходящие элементы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для эффекта воздушности */
+}
+
+/* Заголовки таблицы */
+th {
+    background: linear-gradient(135deg, #4caf50, #81c784); /* Градиентный фон */
+    color: white; /* Белый текст */
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+th:first-child {
+    border-top-left-radius: 12px; /* Закругление для левого верхнего угла */
+}
+
+th:last-child {
+    border-top-right-radius: 12px; /* Закругление для правого верхнего угла */
+}
+
+/* Строки таблицы */
+tbody tr {
+    background: white;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.3s ease; /* Анимация для наведения */
+}
+
+tbody tr:nth-child(even) {
+    background: #f9f9f9; /* Светло-серый фон для четных строк */
+}
+
+tbody tr:hover {
+    background: #f1f1f1; /* Легкое выделение при наведении */
+    transform: scale(1.01); /* Немного увеличиваем строку */
+}
+
+/* Ячейки таблицы */
+td {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+
+td:first-child {
+    text-align: left; /* Левое выравнивание для первой ячейки */
+    font-weight: 500;
+}
+
+/* Нумерация строк */
+tbody tr td:first-child {
+    counter-increment: row-number; /* Увеличиваем счетчик */
+    content: counter(row-number); /* Выводим значение счетчика */
+    font-weight: bold;
+    text-align: center; /* Центрируем нумерацию */
+    background-color: #f3f4f6; /* Легкий фон для нумерации */
+    color: #222; /* Тёмный текст */
+}
+
+/* Кнопки в таблице 
+button {
+    background: #4caf50; /* Зеленый фон кнопки 
+    color: white;
+    border: none;
+    padding: 10px 16px; /* Внутренние отступы 
+    border-radius: 8px; /* Закругленные углы 
+    cursor: pointer;
+    font-size: 14px; /* Размер текста 
+    width: 150px; /* Фиксированная ширина 
+    height: 40px; /* Фиксированная высота 
+    opacity: 0.8; /* Прозрачность кнопки 
+    text-align: center; /* Центрирование текста 
+    transition: all 0.3s ease; /* Плавный переход 
+    white-space: nowrap; /* Отключение переноса текста 
+    overflow: hidden; /* Скрытие лишнего текста 
+    text-overflow: ellipsis; /* Троеточие при переполнении 
+}
+
+button:hover {
+    background: #388e3c; /* Темно-зеленый при наведении 
+    opacity: 1;
+}
+*/
+/* Общий стиль для кнопок статуса */
+button.status {
+    display: inline-flex; /* Используем flexbox для выравнивания */
+    text-align: center;
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: center; /* Центрирование по горизонтали */
+    gap: 8px; /* Расстояние между иконкой и текстом */
+    min-width: 230px; /* Увеличиваем минимальную ширину */
+    max-width: 250px;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Отключаем перенос текста */
+    overflow: hidden; /* Скрываем лишний текст */
+    text-overflow: ellipsis; /* Добавляем троеточие, если текст слишком длинный */
+}
+
+/* "Опубликовано" */
+button.status.published {
+    background-color: #4caf50;
+    opacity: 0.7;
+}
+
+button.status.published::before {
+    content: "✅";
+    font-size: 18px;
+}
+
+/* "Ещё не опубликовано" */
+button.status.not-published {
+    background-color: #ffa500;
+    opacity: 0.7;
+}
+
+button.status.not-published::before {
+    content: "🕒";
+    font-size: 18px;
+}
+
+/* "Депубликовано" */
+button.status.unpublished {
+    background-color: #f44336;
+    opacity: 0.7;
+}
+
+button.status.unpublished::before {
+    content: "🗑️";
+    font-size: 18px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+table {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Адаптивный стиль для маленьких экранов */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}

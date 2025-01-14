@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Современные таблицы</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Пример таблиц</h1>
+    </header>
+
+    <!-- Таблица объявлений -->
+    <section>
+        <h2>Таблица объявлений</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>ИНН Компании</th>
+                    <th>Название Компании</th>
+                    <th>Номер Счета</th>
+                    <th>Дата Счета</th>
+                    <th>Телефоны</th>
+                    <th>Статус</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 15 строк -->
+                <tr><td>1</td><td>1234567890</td><td>ООО "Пример"</td><td>456789</td><td>01.01.2025</td><td>+7 (900) 123-45-67</td> <td><button class="status published">Опубликовано</button></td></tr>
+                <tr><td>2</td><td>9876543210</td><td>ИП "Ромашка"</td><td>123456</td><td>15.05.2025</td><td>+7 (800) 765-43-21</td> <td><button class="status not-published">Ещё не опубликовано</button></td></tr>
+                <tr><td>3</td><td>2345678901</td><td>АО "Лидер"</td><td>234567</td><td>20.07.2024</td><td>+7 (495) 111-22-33</td> <td><button class="status unpublished">Депубликовано</button></td></tr>
+                <tr><td>4</td><td>3456789012</td><td>ООО "Солнце"</td><td>345678</td><td>12.11.2024</td><td>+7 (916) 555-44-66</td> <td><button class="status published">Опубликовано</button></td></tr>
+                <tr><td>5</td><td>4567890123</td><td>ИП "Торговец"</td><td>567890</td><td>05.03.2025</td><td>+7 (499) 987-65-43</td> <td><button class="status not-published">Ещё не опубликовано</button></td></tr>
+                <tr><td>6</td><td>5678901234</td><td>ООО "Феникс"</td><td>678901</td><td>10.02.2025</td><td>+7 (495) 222-33-44</td> <td><button class="status unpublished">Депубликовано</button></td></tr>
+                <tr><td>7</td><td>6789012345</td><td>АО "Новая Эра"</td><td>789012</td><td>18.08.2024</td><td>+7 (812) 333-44-55</td><td><button class="status published">Опубликовано</button></td></tr>
+                <tr><td>8</td><td>7890123456</td><td>ООО "Старт"</td><td>890123</td><td>25.12.2024</td><td>+7 (925) 444-55-66</td><td><button class="status not-published">Ещё не опубликовано</button></td></tr>
+                <tr><td>9</td><td>8901234567</td><td>ИП "Бизнес"</td><td>901234</td><td>07.09.2024</td><td>+7 (963) 555-66-77</td><td><button class="status not-published">Ещё не опубликовано</button></td></tr>
+                <tr><td>10</td><td>9012345678</td><td>АО "Прогресс"</td><td>012345</td><td>30.01.2025</td><td>+7 (999) 666-77-88</td><td><button class="status not-published">Ещё не опубликовано</button></td></tr>
+                <tr><td>11</td><td>0123456789</td><td>ООО "Мир"</td><td>678901</td><td>16.04.2025</td><td>+7 (977) 777-88-99</td><td><button class="status unpublished">Депубликовано</button></td></tr>
+                <tr><td>12</td><td>1122334455</td><td>ИП "Успех"</td><td>112233</td><td>28.02.2025</td><td>+7 (916) 888-99-00</td><td><button class="status unpublished">Депубликовано</button></td></tr>
+                <tr><td>13</td><td>2233445566</td><td>АО "Достижение"</td><td>223344</td><td>03.03.2025</td><td>+7 (909) 999-00-11</td><td><button class="status unpublished">Депубликовано</button></td></tr>
+                <tr><td>14</td><td>3344556677</td><td>ООО "Вектор"</td><td>334455</td><td>19.03.2025</td><td>+7 (915) 111-22-33</td><td><button class="status published">Опубликовано</button></td></tr>
+                <tr><td>15</td><td>4455667788</td><td>ИП "Точка"</td><td>445566</td><td>21.05.2025</td><td>+7 (964) 222-33-44</td><td><button class="status published">Опубликовано</button></td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Таблица откликов -->
+    <section>
+        <h2>Таблица откликов</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>№</th>
+                    <th>ФИО</th>
+                    <th>Знак Зодиака</th>
+                    <th>Гражданство</th>
+                    <th>Вакансия</th>
+                    <th>Образование</th>
+                    <th>Медаль</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 15 строк -->
+                <tr><td>1</td><td>Иванов Иван</td><td>Овен</td><td>Россия</td><td>Менеджер</td><td>Высшее</td><td>Да</td></tr>
+                <tr><td>2</td><td>Петрова Мария</td><td>Лев</td><td>Беларусь</td><td>Бухгалтер</td><td>Среднее</td><td>Нет</td></tr>
+                <tr><td>3</td><td>Сидоров Алексей</td><td>Дева</td><td>Россия</td><td>Инженер</td><td>Высшее</td><td>Да</td></tr>
+                <tr><td>4</td><td>Васильева Анна</td><td>Весы</td><td>Казахстан</td><td>Юрист</td><td>Высшее</td><td>Нет</td></tr>
+                <tr><td>5</td><td>Кузнецов Дмитрий</td><td>Рак</td><td>Россия</td><td>Программист</td><td>Высшее</td><td>Да</td></tr>
+                <tr><td>6</td><td>Новикова Елена</td><td>Близнецы</td><td>Украина</td><td>Аналитик</td><td>Среднее</td><td>Нет</td></tr>
+                <tr><td>7</td><td>Тихонов Андрей</td><td>Рыбы</td><td>Россия</td><td>Учитель</td><td>Высшее</td><td>Нет</td></tr>
+                <tr><td>8</td><td>Фролова Виктория</td><td>Стрелец</td><td>Беларусь</td><td>Медик</td><td>Высшее</td><td>Да</td></tr>
+                <tr><td>9</td><td>Гусев Николай</td><td>Козерог</td><td>Россия</td><td>Дизайнер</td><td>Высшее</td><td>Нет</td></tr>
+                <tr><td>10</td><td>Михайлова Ирина</td><td>Водолей</td><td>Казахстан</td><td>Маркетолог</td><td>Среднее</td><td>Нет</td></tr>
+                <tr><td>11</td><td>Шестаков Павел</td><td>Овен</td><td>Россия</td><td>Архитектор</td><td>Высшее</td><td>Да</td></tr>
+                <tr><td>12</td><td>Кравцова Ольга</td><td>Телец</td><td>Россия</td><td>Экономист</td><td>Среднее</td><td>Нет</td></tr>
+                <tr><td>13</td><td>Морозова Светлана</td><td>Дева</td><td>Беларусь</td><td>Психолог</td><td>Высшее</td><td>Да</td></tr>
+                <tr><td>14</td><td>Зайцев Михаил</td><td>Рак</td><td>Украина</td><td>Художник</td><td>Среднее</td><td>Нет</td></tr>
+                <tr><td>15</td><td>Попова Анастасия</td><td>Лев</td><td>Россия</td><td>Менеджер</td><td>Высшее</td><td>Да</td></tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
